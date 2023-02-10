@@ -1,0 +1,21 @@
+<section>
+
+  <div class="image">
+    <img src="{{this.image_url}}">
+  </div>
+
+  <div class="infos">
+
+    {{#if title}}
+      <a href="/beers/{{this.id}}">
+        <h3>{{this.name}}</h3>
+      </a>
+    {{else}}
+      <h3>{{this.name}}</h3>
+    {{/if}}
+
+    <p class="tagline">{{this.tagline}}</p>
+    <p>{{this.description}}</p>
+  </div>
+
+</section>

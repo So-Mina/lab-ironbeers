@@ -1,0 +1,36 @@
+a {
+  list-style: none;
+}
+
+.tagline {
+  color: #bfbfbf;
+}
+
+img {
+  height: 20rem;
+}
+
+div li {
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 2.5rem;
+}
+
+span {
+  font-weight: 700;
+}
+
+a {
+  list-style: none;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,37 @@
+
+.tagline {
+  color: #bfbfbf;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+}
+
+section div p:last-child {
+  margin-top: 1rem;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+img {
+  height: 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

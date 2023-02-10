@@ -1,0 +1,50 @@
+{{#each beer}}
+
+  {{> beerpartial}}
+
+   <div> 
+      <ul><span>Food Pairing :</span>
+          {{#each food_pairing}}
+        <li>{{this}}</li>
+          {{/each}}
+      </ul>
+    </div>
+
+    <div>
+      <p><span>Brewer's Tips :</span></p> 
+      <p>{{brewers_tips}}</p>
+    </div>
+
+    <div> 
+      <span>First Brewed :</span>
+        <p>{{first_brewed}}</p>
+    </div>
+
+    <div> 
+      <ul><span>Volume :</span>
+          <p>{{#each volume}}
+            {{this}}
+          {{/each}}</p>
+      </ul>
+    </div>
+
+    {{#if method.twist}}
+    <div>
+      <ul><span>Method :</span>
+          <li>{{method.twist}}</li>
+      </ul>
+    </div> {{/if}}
+
+    {{#if ingredients.yeast}}
+    <div>
+      <ul><span>Ingredients :</span>
+          <li>{{ingredients.yeast}}</li>
+      </ul>
+    </div> {{/if}}
+
+    <div>
+      <span>Contributed by :</span>
+          <p>{{contributed_by}}</p>
+    </div>
+
+{{/each}}
