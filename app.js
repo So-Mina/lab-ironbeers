@@ -60,7 +60,7 @@ app.get('/beers/:id', (req, res) => {
   punkAPI
     .getBeer(beerId)
     .then(beerFromApi => {
-      console.log(beerFromApi[0].method.fermentation);
+      
       res.render('details-beer', {
         title : `Details of ${beerFromApi[0].name}`,
         css : ['details-beer'],
